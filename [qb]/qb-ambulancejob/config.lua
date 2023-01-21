@@ -60,24 +60,24 @@ Config.Locations = { -- Edit the various interaction points for players or creat
         [1] = vector4(338.5, -583.85, 74.16, 245.5),
     },
     ["main"] = {
-        [1] = vector3(298.74, -599.33, 43.29),
+        [1] = vector3(-673.22, 317.99, 83.08),
     },
     ["stash"] = {
-        [1] = vector3(309.78, -596.6, 43.29),
+        [1] = vector3(-681.6, 329.14, 83.08),
     },
     ["beds"] = {
         [1] = {coords = vector4(-667.0571, 314.8237, 87.0081, 350.32), taken = false, model = 2179859320},
-        [2] = {coords = vector4(356.79, -585.86, 43.11, 152.08), taken = false, model = 1631638868},
-        [3] = {coords = vector4(354.12, -593.12, 43.1, 336.32), taken = false, model = 2117668672},
-        [4] = {coords = vector4(350.79, -591.8, 43.1, 336.32), taken = false, model = 2117668672},
-        [5] = {coords = vector4(346.99, -590.48, 43.1, 336.32), taken = false, model = 2117668672},
-        [6] = {coords = vector4(360.32, -587.19, 43.02, 152.08), taken = false, model = -1091386327},
-        [7] = {coords = vector4(349.82, -583.33, 43.02, 152.08), taken = false, model = -1091386327},
-        [8] = {coords = vector4(326.98, -576.17, 43.02, 152.08), taken = false, model = -1091386327},
+        [2] = {coords = vector4(-671.5956, 315.1574, 87.0081, 350.32), taken = false, model = 1864723433},
+        [3] = {coords = vector4(-676.2513, 315.6695, 87.0081, 350.32), taken = false, model = 1864721858},
+        [4] = {coords = vector4(-681.1139, 320.1721, 87.00807, 80.32), taken = false, model = 2179861005},
+        [5] = {coords = vector4(-680.6978, 324.8093, 87.0081, 80.32), taken = false, model = 2179861014},
+        -- [6] = {coords = vector4(360.32, -587.19, 43.02, 152.08), taken = false, model = -1091386327},
+        -- [7] = {coords = vector4(349.82, -583.33, 43.02, 152.08), taken = false, model = -1091386327},
+        -- [8] = {coords = vector4(326.98, -576.17, 43.02, 152.08), taken = false, model = -1091386327},
 	--- paleto
-	    [9] = {coords = vector4(-252.43, 6312.25, 32.34, 313.48), taken = false, model = 2117668672},
-        [10] = {coords = vector4(-247.04, 6317.95, 32.34, 134.64), taken = false, model = 2117668672},
-        [11] = {coords = vector4(-255.98, 6315.67, 32.34, 313.91), taken = false, model = 2117668672},
+	    -- [9] = {coords = vector4(-252.43, 6312.25, 32.34, 313.48), taken = false, model = 2117668672},
+        -- [10] = {coords = vector4(-247.04, 6317.95, 32.34, 134.64), taken = false, model = 2117668672},
+        -- [11] = {coords = vector4(-255.98, 6315.67, 32.34, 313.91), taken = false, model = 2117668672},
     },
     ["jailbeds"] = {
         [1] = {coords = vector4(1761.96, 2597.74, 45.66, 270.14), taken = false, model = 2117668672},
@@ -86,7 +86,7 @@ Config.Locations = { -- Edit the various interaction points for players or creat
         [4] = {coords = vector4(1771.85, 2591.85, 45.66, 91.51), taken = false, model = 2117668672},
     },
     ["stations"] = {
-        [1] = {label = Lang:t('info.pb_hospital'), coords = vector4(304.27, -600.33, 43.28, 272.249)}
+        [1] = {label = Lang:t('info.pb_hospital'), coords = vector4(-681.04, 318.59, 83.08, 174.23) }
     }
 }
 
