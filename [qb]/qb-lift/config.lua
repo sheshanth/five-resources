@@ -16,32 +16,32 @@ Config.Elevators = {
         Name = "EMS",
         Floors = {
             [1] = {
-                Label = "Ground floor",
-                FloorDesc = "Description for parking",
+                Label = "Basement",
+                FloorDesc = "vehicle parking",
                 Coords = vector3(-662.55, 328.6, 78.12),
                 ExitHeading = "28.74"
             },
             [2] = {
                 Label = "Ground Floor",
-                FloorDesc = "Description for ground floor",
+                FloorDesc = "Checkin and reception",
                 Coords = vector3(-662.69, 328.71, 83.08),
                 ExitHeading = "28.74"
             },
             [3] = {
                 Label = "Floor 1",
-                FloorDesc = "Description for floor 2",
+                FloorDesc = "Consultation and OPD",
                 Coords = vector3(-662.68, 328.89, 88.02),
                 ExitHeading = "28.74"
             },
             [4] = {
                 Label = "Floor 2",
-                FloorDesc = "Description for floor 3",
+                FloorDesc = "Consultation and OPD",
                 Coords = vector3(-662.69, 328.52, 92.74),
                 ExitHeading = "28.74"
             },
             [5] = {
                 Label = "Roof",
-                FloorDesc = "Description for Roof",
+                FloorDesc = "Dean office",
                 restricted= true,
                 Coords = vector3(-662.59, 328.55, 140.12),
                 ExitHeading = "28.74"
