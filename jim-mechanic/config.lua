@@ -13,15 +13,15 @@ Config = {
 	RequiresJob = true,  -- Do the specfic items require the mechanic job?
 	LocationRequired = true, -- Are the mecahnics locked to specific locations?
 	LocationBlips = true, -- Enable to grab the blip locations from locations.lua
-	CosmeticsJob = false, -- Do vehicle cosmetics require a mechanic job role?
+	CosmeticsJob = true, -- Do vehicle cosmetics require a mechanic job role?
 	FreeRepair = false,  -- Are repairs free? True means yes
 	StashRepair = true, -- Enable for repair materials to be removed from a job stash (disabled if RequiresJob = false)
 	Stores = true, -- Set true to turn on shop storage features
 	Crafting = true, -- Set true to turn on crafting features
-	StashCraft = false,  -- Set true to grab materials from mechaincs stash for crafting
-	PreviewPhone = true, -- Enable this is preview menu generates an email, False if you want to give an item
+	StashCraft = true,  -- Set true to grab materials from mechaincs stash for crafting
+	PreviewPhone = false, -- Enable this is preview menu generates an email, False if you want to give an item
 	PreviewJob = false, -- Enable this if you want /preview to require a Job Role
-	PreviewLocation = false, -- Enable this if you want to lock /preview to a job location (ignored if LocationRequired is false)
+	PreviewLocation = true, -- Enable this if you want to lock /preview to a job location (ignored if LocationRequired is false)
 
 	PhoneMail = "qb", 	-- If PreviewPhone is true, change this to choose the correct phone system
 						-- "qb" = use qb-phone for emails
