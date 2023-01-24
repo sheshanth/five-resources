@@ -117,7 +117,8 @@ RegisterNetEvent('qb-cityhall:server:ApplyJob', function(job, cityhallCoords)
         return DropPlayer(source, "Attempted exploit abuse")
     end
     Player.Functions.SetJob(job, 0)
-    TriggerClientEvent('QBCore:Notify', src, Lang:t('info.new_job', {job = JobInfo.label}))
+    exports['qb-phone']:hireUser(job, Player.PlayerData.citizenid, 0)
+TriggerClientEvent('QBCore:Notify', src, Lang:t('info.new_job', {job = JobInfo.label}))
 end)
 
 RegisterNetEvent('qb-cityhall:server:getIDs', giveStarterItems)

@@ -1819,8 +1819,4 @@ Garages = {
     },
 }
 
-Config = {}
-
-Config.Garages = Garages
-
 HouseGarages = {} -- DO NOT TOUCH!
