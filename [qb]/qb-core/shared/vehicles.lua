@@ -5398,6 +5398,26 @@ QBShared.Vehicles = {
         ['hash'] = `tiptruck2`,
         ['shop'] = 'truck',
     },
+    ['evija'] = { -- This has to match the spawn code of the vehicle
+        ['name'] = 'Evija', -- This is the display of the vehicle
+        ['brand'] = 'Lotus', -- This is the vehicle's brand (Ford, Chevrolet, BMW, Mercedes, etc)
+        ['model'] = 'evija', -- This must match the spawn code of the vehicle
+        ['price'] = 300000, -- The price that the vehicle sells for
+        ['category'] = 'super', -- This must match "VehicleClass" in vehicles.meta for the vehicle and must also exist in https://docs.fivem.net/natives/?_0x29439776AAA00A62
+        ['categoryLabel'] = 'Super', -- Customize for your Vehicle Shop headings (can even include spaces)
+        ['hash'] = `evija`, -- This has to match the spawn code of the vehicle and must be surrounded by backticks. Example of a Backtick: `
+        ['shop'] = 'luxury', -- Can be a single shop or multiple shops. For multiple shops for example {'shopname1','shopname2','shopname3'}
+    },
+    ['rmodmustang'] = { -- This has to match the spawn code of the vehicle
+        ['name'] = 'Mustang', -- This is the display of the vehicle
+        ['brand'] = 'Ford', -- This is the vehicle's brand (Ford, Chevrolet, BMW, Mercedes, etc)
+        ['model'] = 'mustang GT', -- This must match the spawn code of the vehicle
+        ['price'] = 300000, -- The price that the vehicle sells for
+        ['category'] = 'muscle', -- This must match "VehicleClass" in vehicles.meta for the vehicle and must also exist in https://docs.fivem.net/natives/?_0x29439776AAA00A62
+        ['categoryLabel'] = 'Muscle', -- Customize for your Vehicle Shop headings (can even include spaces)
+        ['hash'] = `rmodmustang`, -- This has to match the spawn code of the vehicle and must be surrounded by backticks. Example of a Backtick: `
+        ['shop'] = 'luxury', -- Can be a single shop or multiple shops. For multiple shops for example {'shopname1','shopname2','shopname3'}
+    },
 }
 
 for _, v in pairs(QBShared.Vehicles) do

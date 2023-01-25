@@ -90,7 +90,7 @@ CREATE TABLE `phone_chatrooms` (
     `room_name` VARCHAR(15) NOT NULL,
     `room_owner_id` VARCHAR(20),
     `room_owner_name` VARCHAR(60),
-    `room_members` TEXT DEFAULT '{}',
+    `room_members` TEXT,
     `room_pin` VARCHAR(50),
     `unpaid_balance` DECIMAL(10,2) DEFAULT 0,
     `is_pinned` BOOLEAN DEFAULT 0,
