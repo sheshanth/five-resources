@@ -125,13 +125,13 @@ Config.Shops = {
             },
             [4] = {
                 coords = vector4(-1252.07, -364.2, 35.91, 56.44),
-                defaultVehicle = 'bati',
-                chosenVehicle = 'bati'
+                defaultVehicle = 'evija',
+                chosenVehicle = 'evija'
             },
             [5] = {
                 coords = vector4(-1255.49, -365.91, 35.91, 55.63),
-                defaultVehicle = 'carbonrs',
-                chosenVehicle = 'carbonrs'
+                defaultVehicle = 'rmodmustang',
+                chosenVehicle = 'rmodmustang'
             },
             [6] = {
                 coords = vector4(-1249.21, -362.97, 35.91, 53.24),
