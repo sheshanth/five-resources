@@ -491,6 +491,9 @@ function FormatItemInfo(itemData, dom) {
                 itemData.info.type +
                 "</span></p>"
             );
+        } else if (itemData.name == "rentalpapers") {
+            $(".item-info-title").html('<p>' + itemData.label + '</p>')
+            $(".item-info-description").html('<p><strong>Plate: </strong><span>'+ itemData.info.label + '</span></p>');
         } else if (itemData.name == "weaponlicense") {
             $(".item-info-title").html("<p>" + itemData.label + "</p>");
             $(".item-info-description").html(
