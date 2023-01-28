@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SInteriorOrderData>
+    <startFrom value="2000" />
+    <filePathHash value="0" />
+    <proxies>
+        <Item>denis3d_tunershop_exterior</Item>
+        <Item>denis3d_tunershop_milo_</Item>
+        <Item>denis3d_tunershop_lod</Item>
+        <Item>denis3d_tunershop_occl</Item>
+        <Item>hei_po1_08_strm_0</Item>
+        <Item>hei_po1_08_critical_0</Item>
+        <Item>hei_po1_08_long_0</Item>
+        <Item>hei_po1_08_strm_1</Item>
+        <Item>hei_po1_occl_00</Item>
+        <Item>hei_po1_08_strm_2</Item>
+    </proxies>
+</SInteriorOrderData>
