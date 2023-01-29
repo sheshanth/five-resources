@@ -135,7 +135,7 @@ Config = {
 								-- Add your extra job roles here or just leave as "mechanic"
 	--Example--
 	-- JobRoles = { "mechanic", "tuner" }
-	JobRoles = { "tuner" },
+	JobRoles = { "mechanic" },
 
 -- nosBar() stuff
 	nosBarColour = true, -- "true" to set nosBars to use colour, "false" for white and grey
