@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS `mdt_data` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `cid` VARCHAR(20) DEFAULT NULL,
+  `cid` VARCHAR(20),
   `information` MEDIUMTEXT DEFAULT NULL,
   `tags` TEXT NOT NULL,
   `gallery` TEXT NOT NULL,
@@ -94,10 +94,10 @@ CREATE TABLE IF NOT EXISTS `mdt_logs` (
 CREATE TABLE IF NOT EXISTS `mdt_vehicleinfo` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `plate` varchar(50) DEFAULT NULL,
-  `information` text NOT NULL DEFAULT '',
+  `information` text NOT NULL,
   `stolen` tinyint(1) NOT NULL DEFAULT 0,
   `code5` tinyint(1) NOT NULL DEFAULT 0,
-  `image` text NOT NULL DEFAULT '',
+  `image` text NOT NULL,
   `points` int(11) DEFAULT 0,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -106,7 +106,7 @@ CREATE TABLE IF NOT EXISTS `mdt_weaponinfo` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `serial` varchar(50) DEFAULT NULL,
   `owner` varchar(50) DEFAULT NULL,
-  `information` text NOT NULL DEFAULT '',
+  `information` text NOT NULL,
   `weapClass` varchar(50) DEFAULT NULL,
   `weapModel` varchar(50) DEFAULT NULL,
   `image` varchar(255) DEFAULT NULL,
