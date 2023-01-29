@@ -1819,4 +1819,7 @@ Garages = {
     },
 }
 
+config = {}
+config.Garages = Garages
+
 HouseGarages = {} -- DO NOT TOUCH!
