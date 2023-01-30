@@ -1,7 +1,7 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 local PlayerJob = {}
 local patt = "[?!@#]"
-local frontCam = false
+local frontCam = true
 PhoneData = {
     MetaData = {},
     isOpen = false,
