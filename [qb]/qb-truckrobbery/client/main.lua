@@ -335,7 +335,7 @@ end)
 
 function CheckVehicleInformation()
     if IsVehicleStopped(transport) then
-        if IsVehicleSeatFree(transport, -1) and IsVehicleSeatFree(transport, 0) and IsVehicleSeatFree(transport, 1) and
+        -- if IsVehicleSeatFree(transport, -1) and IsVehicleSeatFree(transport, 0) and IsVehicleSeatFree(transport, 1) and
             GuardsDead == 1 then
             if not IsEntityInWater(PlayerPedId()) then
                 RequestAnimDict('anim@heists@ornate_bank@thermal_charge_heels')
@@ -371,9 +371,9 @@ function CheckVehicleInformation()
             else
                 QBCore.Functions.Notify('Get out of the water', "error")
             end
-        else
-            QBCore.Functions.Notify('The vehicle must be empty to place the load', "error")
-        end
+        -- else
+        --     QBCore.Functions.Notify('The vehicle must be empty to place the load', "error")
+        -- end
     else
         QBCore.Functions.Notify('You cant rob a vehicle that is moving.', "error")
     end
