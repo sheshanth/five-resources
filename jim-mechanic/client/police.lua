@@ -9,8 +9,8 @@ Config.QuickJobs = {
 
 Config.PoliceLocations = {
     --Add your poly zone box locations and job name for each store and it will add it to the qb-target loop above
-    { coords = vector3(451.05, -973.19, 25.7), heading = 0, }, -- MRPD UNDERGROUND PARKING
-    { coords = vector3(-696.52, 364.96, 78.12), heading =  88.92, }, -- PILL BOX GARAGE
+    { coords = vector3(456.8, -1025.02, 28.44), heading = 267.4, }, -- MRPD UNDERGROUND PARKING
+    { coords = vector3(-697.4, 365.13, 78.12), heading =93.4, }, -- PILL BOX GARAGE
 }
 
 local bench = {}
