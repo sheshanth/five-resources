@@ -336,7 +336,7 @@ end)
 function CheckVehicleInformation()
     if IsVehicleStopped(transport) then
         -- if IsVehicleSeatFree(transport, -1) and IsVehicleSeatFree(transport, 0) and IsVehicleSeatFree(transport, 1) and
-            GuardsDead == 1 then
+            -- GuardsDead == 1 then
             if not IsEntityInWater(PlayerPedId()) then
                 RequestAnimDict('anim@heists@ornate_bank@thermal_charge_heels')
                 while not HasAnimDictLoaded('anim@heists@ornate_bank@thermal_charge_heels') do
