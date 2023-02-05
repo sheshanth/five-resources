@@ -14,7 +14,7 @@ end
 RegisterNetEvent('qb-busjob:server:NpcPay', function()
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
-    local Payment = math.random(15, 25)
+    local Payment = math.random(5000, 6000)
     if Player.PlayerData.job.name == "bus" then
         if NearBus(src) then
             local randomAmount = math.random(1, 5)

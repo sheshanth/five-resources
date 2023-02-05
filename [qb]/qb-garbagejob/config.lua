@@ -9,16 +9,16 @@ Config.TruckPrice = 250
 Config.GiveCryptoStick = true
 
 -- Has to roll this number or higher to receive a cryptostick
-Config.CryptoStickChance = 75
+Config.CryptoStickChance = 20
 
 -- How many stops minimum should the job roll?
 Config.MinStops = 5
 
 -- Upper worth per bag
-Config.BagUpperWorth = 100
+Config.BagUpperWorth = 3000
 
 -- Lower worth per bag
-Config.BagLowerWorth = 50
+Config.BagLowerWorth = 2000
 
 -- Minimum bags per stop
 Config.MinBagsPerStop = 2
