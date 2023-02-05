@@ -63,7 +63,7 @@ RegisterNetEvent('qb-tow:server:11101110', function(drops)
 
     drops = tonumber(drops)
     local bonus = 0
-    local DropPrice = math.random(150, 170)
+    local DropPrice = math.random(5000, 6000)
     if drops > 5 then
         bonus = math.ceil((DropPrice / 10) * 5)
     elseif drops > 10 then

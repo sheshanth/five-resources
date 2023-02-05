@@ -5,7 +5,7 @@ Config.UseTarget = GetConvar('UseTarget', 'false') == 'true'
 Config.TruckerJobTruckDeposit = 125
 Config.TruckerJobFixedLocation = false
 Config.TruckerJobMaxDrops = 20 -- amount of locations before being forced to return to station to reload
-Config.TruckerJobDropPrice = 500
+Config.TruckerJobDropPrice = 2500
 Config.TruckerJobBonus = 20 -- this is a percentage to calculate bonus over 5 deliveries.
 Config.TruckerJobPaymentTax = 15
 

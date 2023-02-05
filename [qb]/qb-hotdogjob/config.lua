@@ -28,20 +28,20 @@ Config.Stock = {
         Label = Lang:t("info.label_a"),
         Price = {
             [1] = {
-                min = 8,
-                max = 12,
+                min = 6000,
+                max = 6000,
             },
             [2] = {
-                min = 9,
-                max = 13,
+                min = 6000,
+                max = 6000,
             },
             [3] = {
-                min = 10,
-                max = 14,
+                min = 6000,
+                max = 6000,
             },
             [4] = {
-                min = 11,
-                max = 15,
+                min = 6000,
+                max = 6000,
             },
         }
     },
@@ -56,20 +56,20 @@ Config.Stock = {
         Label = Lang:t("info.label_b"),
         Price = {
             [1] = {
-                min = 6,
-                max = 9,
+                min = 4000,
+                max = 4000,
             },
             [2] = {
-                min = 7,
-                max = 10,
+                min = 4000,
+                max = 4000,
             },
             [3] = {
-                min = 8,
-                max = 11,
+                min = 4000,
+                max = 4000,
             },
             [4] = {
-                min = 9,
-                max = 12,
+                min = 4000,
+                max = 4000,
             },
         }
     },
@@ -84,20 +84,20 @@ Config.Stock = {
         Label = Lang:t('info.label_c'),
         Price = {
             [1] = {
-                min = 4,
-                max = 6,
+                min = 2000,
+                max = 2000,
             },
             [2] = {
-                min = 5,
-                max = 7,
+                min = 2000,
+                max = 2000,
             },
             [3] = {
-                min = 6,
-                max = 9,
+                min = 2000,
+                max = 2000,
             },
             [4] = {
-                min = 7,
-                max = 9,
+                min = 2000,
+                max = 2000,
             },
         }
     },
