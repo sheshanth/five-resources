@@ -643,7 +643,7 @@ local function GetPositionByRelativeHeading(ped, head, dist)
 end
 local function openMenu(allowedMenus)
     previousSkinData = json.encode(skinData)
-    creatingCharacter = true
+    creatingCharacter = false
     PlayerData = QBCore.Functions.GetPlayerData()
     local trackerMeta = PlayerData.metadata["tracker"]
     GetMaxValues()
