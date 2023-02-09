@@ -426,10 +426,49 @@ QBClothing.Open = function(data) {
             $(".clothing-menu-" + menu.menu + "-container").css({ "display": "block" });
 
             if (menu.label == "Clothing") {
-                $("#faceoption").css("display", "none");
-            } else {
-                $("#faceoption").css("display", "block");
-            }
+                $("div[data-type*='face']").css("display", "none");
+                $("div[data-type*='model']").css("display", "none");
+                } else if (menu.label == "Hair"){
+                $("div[data-type*='eye_color']").css("display", "none");
+                $("div[data-type*='moles']").css("display", "none");
+                $("div[data-type*='nose']").css("display", "none");
+                $("div[data-type*='cheek']").css("display", "none");
+                $("div[data-type*='chin']").css("display", "none");
+                $("div[data-type*='neck_thikness']").css("display", "none");
+                $("div[data-type*='chimp_hole']").css("display", "none");
+                $("div[data-type*='chimp_bone_width']").css("display", "none");
+                $("div[data-type*='chimp_bone_lenght']").css("display", "none");
+                $("div[data-type*='chimp_bone_lowering']").css("display", "none");
+                $("div[data-type*='jaw_bone_back_lenght']").css("display", "none");
+                $("div[data-type*='jaw_bone_width']").css("display", "none");
+                $("div[data-type*='eye_opening']").css("display", "none");
+                $("div[data-type*='lips_thickness']").css("display", "none");
+                $("div[data-type*='ageing']").css("display", "none");
+                $("div[data-type*='eyebrown_high']").css("display", "none");
+                $("div[data-type*='eyebrown_forward']").css("display", "none");
+                }
+                else
+                {
+                $("div[data-type*='face']").css("display", "block");
+                $("div[data-type*='model']").css("display", "block");
+                $("div[data-type*='eye_color']").css("display", "block");
+                $("div[data-type*='moles']").css("display", "block");
+                $("div[data-type*='nose']").css("display", "block");
+                $("div[data-type*='cheek']").css("display", "block");
+                $("div[data-type*='chin']").css("display", "block");
+                $("div[data-type*='neck_thikness']").css("display", "block");
+                $("div[data-type*='chimp_hole']").css("display", "block");
+                $("div[data-type*='chimp_bone_width']").css("display", "block");
+                $("div[data-type*='chimp_bone_lenght']").css("display", "block");
+                $("div[data-type*='chimp_bone_lowering']").css("display", "block");
+                $("div[data-type*='jaw_bone_back_lenght']").css("display", "block");
+                $("div[data-type*='jaw_bone_width']").css("display", "block");
+                $("div[data-type*='eye_opening']").css("display", "block");
+                $("div[data-type*='lips_thickness']").css("display", "block");
+                $("div[data-type*='ageing']").css("display", "block");
+                $("div[data-type*='eyebrown_high']").css("display", "block");
+                $("div[data-type*='eyebrown_forward']").css("display", "block");
+                }
 
             selectedTab = "." + menu.menu + "Tab";
             lastCategory = menu.menu;
