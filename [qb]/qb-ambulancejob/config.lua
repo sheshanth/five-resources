@@ -108,24 +108,23 @@ Config.Locations = { -- Edit the various interaction points for players or creat
 Config.AuthorizedVehicles = { -- Vehicles players can use based on their ambulance job grade level
 	-- Grade 0
 	[0] = {
-		["ambulance"] = "Ambulance",
+		["dodgeEMS"] = "Dodge",
 	},
 	-- Grade 1
 	[1] = {
-		["ambulance"] = "Ambulance",
-
+		["dodgeEMS"] = "Dodge",
 	},
 	-- Grade 2
 	[2] = {
-		["ambulance"] = "Ambulance",
+		["dodgeEMS"] = "Dodge",
 	},
 	-- Grade 3
 	[3] = {
-		["ambulance"] = "Ambulance",
+		["dodgeEMS"] = "Dodge",
 	},
 	-- Grade 4
 	[4] = {
-		["ambulance"] = "Ambulance",
+		["dodgeEMS"] = "Dodge",
 	}
 }
 
