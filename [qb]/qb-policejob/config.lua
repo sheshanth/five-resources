@@ -104,59 +104,26 @@ Config.SecurityCameras = {
 Config.AuthorizedVehicles = {
 	-- Grade 0
 	[0] = {
-		["police"] = "Police Car 1",
-		["police2"] = "Police Car 2",
-		["police3"] = "Police Car 3",
-		["police4"] = "Police Car 4",
-		["policeb"] = "Police Car 5",
-		["policet"] = "Police Car 6",
-		["sheriff"] = "Sheriff Car 1",
-		["sheriff2"] = "Sheriff Car 2",
+		["c8cop"] = "Corvette",
 	},
 	-- Grade 1
 	[1] = {
-		["police"] = "Police Car 1",
-		["police2"] = "Police Car 2",
-		["police3"] = "Police Car 3",
-		["police4"] = "Police Car 4",
-		["policeb"] = "Police Car 5",
-		["policet"] = "Police Car 6",
-		["sheriff"] = "Sheriff Car 1",
-		["sheriff2"] = "Sheriff Car 2",
-
+		["c8cop"] = "Corvette",
 	},
 	-- Grade 2
 	[2] = {
-		["police"] = "Police Car 1",
-		["police2"] = "Police Car 2",
-		["police3"] = "Police Car 3",
-		["police4"] = "Police Car 4",
-		["policeb"] = "Police Car 5",
-		["policet"] = "Police Car 6",
-		["sheriff"] = "Sheriff Car 1",
-		["sheriff2"] = "Sheriff Car 2",
+		["c8cop"] = "Corvette",
+        ["polp1"] = "mc laren",
 	},
 	-- Grade 3
 	[3] = {
-		["police"] = "Police Car 1",
-		["police2"] = "Police Car 2",
-		["police3"] = "Police Car 3",
-		["police4"] = "Police Car 4",
-		["policeb"] = "Police Car 5",
-		["policet"] = "Police Car 6",
-		["sheriff"] = "Sheriff Car 1",
-		["sheriff2"] = "Sheriff Car 2",
+		["c8cop"] = "Corvette",
+        ["polp1"] = "mc laren",
 	},
 	-- Grade 4
 	[4] = {
-		["police"] = "Police Car 1",
-		["police2"] = "Police Car 2",
-		["police3"] = "Police Car 3",
-		["police4"] = "Police Car 4",
-		["policeb"] = "Police Car 5",
-		["policet"] = "Police Car 6",
-		["sheriff"] = "Sheriff Car 1",
-		["sheriff2"] = "Sheriff Car 2",
+		["c8cop"] = "Corvette",
+        ["polp1"] = "mc laren",
 	}
 }
 
