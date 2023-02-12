@@ -7,6 +7,7 @@ body {
 	user-select: none;
 	background-repeat: no-repeat;
 	background-size: cover;
+	
 }
 
 .crafting-body{
@@ -219,4 +220,41 @@ hr {
 	box-shadow: 0px 0px 5px 0px rgba(10, 10, 10, 0.3);
 	border-radius: 10px;
 	padding: 5px;
+}
+
+.progress {
+	background: rgba(220, 220, 220, 0.20);
+	justify-content: flex-start;
+	border-radius: 20px;
+	align-items: center;
+	position: relative;
+	padding: 0 5px;
+	display: flex;
+	height: 40px;
+	width: 100%;
+}
+
+.progress-value {
+	animation: load 1s normal forwards;
+	border-radius: 100px;
+	background: #1f5eff;
+	height: 30px;
+	width: 25%;
+}
+
+:root {
+    --percentage-width: 40%;
+}
+
+
+@keyframes load {
+	0% { width: 0; }
+	100% { width: var(--percentage-width); }
+}
+
+.xpbar {
+	width: 370px;
+	position: fixed;
+	right: 8.4%;
+	top: 16%;
 }

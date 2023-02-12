@@ -4,6 +4,7 @@ function addStr(str, index, stringToAdd){
 
 var isTimerOn = false;
 var lastTime;
+var canPressCraft = true;
 
 window.addEventListener('message', function(event) {
 	item = event.data;
@@ -20,46 +21,94 @@ window.addEventListener('message', function(event) {
 			for(var i = 0; i < num; i++) {
 				for(var i1 = 0; i1 < craft[i].job.length; i1++){
 					if(craft[i].job[i1] == job || craft[i].job[i1] == ''){
-						var itemName = event.data.itemNames;
-						var itemId = craft[i].item;
-						added++
-						row += `
-							<div class="col-md-3">
-								<div class="card item-card" id="${itemId}wb_${event.data.wb}">
-									<div class="card-body item-card-body d-flex justify-content-center align-items-center" style="background-color: rgba(220, 220, 220, 0.20)" id="selected${itemId}wb_${event.data.wb}">
-										<span class="item-title text-center">${itemName[itemId]}</span>
-										<img src="icons/${itemId}.png" class="image">
+						if(!event.data.UseXP){
+							var itemName = event.data.itemNames;
+							var itemId = craft[i].item;
+							added++
+							row += `
+								<div class="col-md-3">
+									<div class="card item-card" id="${itemId}wb_${event.data.wb}">
+										<div class="card-body item-card-body d-flex justify-content-center align-items-center" style="background-color: rgba(220, 220, 220, 0.20)" id="selected${itemId}wb_${event.data.wb}">
+											<span class="item-title text-center">${itemName[itemId]}</span>
+											<img src="icons/${itemId}.png" class="image">
+										</div>
 									</div>
 								</div>
-							</div>
-						`;
-						var myEle = document.getElementById(itemId+"wb_"+event.data.wb);
-					if(!myEle) {
-						$(document).on('click', "#"+itemId+"wb_"+event.data.wb, function() {
-							allID = this.id;
-							id = allID.substring(0, allID.indexOf('wb_'));
-							$('.item-card-body').css('background-color', 'rgba(220, 220, 220, 0.20)');
-							$('#selected'+this.id).css('background-color', 'rgba(31, 94, 255, 1)');
-							var sound = new Audio('click.mp3');
-							sound.volume = 0.3;
-							sound.play();
-							$.post('https://okokCrafting/action', JSON.stringify({
-								action: "craft",
-								item: id,
-								crafts: craft,
-								itemName: itemName,
-							}));
-						});
-					}
+							`;
+							var myEle = document.getElementById(itemId+"wb_"+event.data.wb);
+							if(!myEle) {
+								$(document).on('click', "#"+itemId+"wb_"+event.data.wb, function() {
+									allID = this.id;
+									id = allID.substring(0, allID.indexOf('wb_'));
+									$('.item-card-body').css('background-color', 'rgba(220, 220, 220, 0.20)');
+									$('#selected'+this.id).css('background-color', 'rgba(31, 94, 255, 1)');
+									var sound = new Audio('click.mp3');
+									sound.volume = 0.3;
+									sound.play();
+									$.post('https://okokCrafting/action', JSON.stringify({
+										action: "craft",
+										item: id,
+										crafts: craft,
+										itemName: itemName,
+									}));
+								});
+							}
 
-					if ((added) % 4 === 0) {
-							row = addStr(row, row.length, `</div><div class="row mt-4">`);
-							lastRowNum = row.length+6;
+							if ((added) % 4 === 0) {
+								row = addStr(row, row.length, `</div><div class="row mt-4">`);
+								lastRowNum = row.length+6;
+							}
+						} else {
+							if(craft[i].levelNeeded <= event.data.level){
+								var itemName = event.data.itemNames;
+								var itemId = craft[i].item;
+								added++
+								row += `
+									<div class="col-md-3">
+										<div class="card item-card" id="${itemId}wb_${event.data.wb}">
+											<div class="card-body item-card-body d-flex justify-content-center align-items-center" style="background-color: rgba(220, 220, 220, 0.20)" id="selected${itemId}wb_${event.data.wb}">
+												<span class="item-title text-center">${itemName[itemId]}</span>
+												<img src="icons/${itemId}.png" class="image">
+											</div>
+										</div>
+									</div>
+								`;
+								var myEle = document.getElementById(itemId+"wb_"+event.data.wb);
+								if(!myEle) {
+									$(document).on('click', "#"+itemId+"wb_"+event.data.wb, function() {
+										allID = this.id;
+										id = allID.substring(0, allID.indexOf('wb_'));
+										$('.item-card-body').css('background-color', 'rgba(220, 220, 220, 0.20)');
+										$('#selected'+this.id).css('background-color', 'rgba(31, 94, 255, 1)');
+										var sound = new Audio('click.mp3');
+										sound.volume = 0.3;
+										sound.play();
+										$.post('https://okokCrafting/action', JSON.stringify({
+											action: "craft",
+											item: id,
+											crafts: craft,
+											itemName: itemName,
+										}));
+									});
+								}
+
+								if ((added) % 4 === 0) {
+									row = addStr(row, row.length, `</div><div class="row mt-4">`);
+									lastRowNum = row.length+6;
+								}
+							}
 						}
 					}
 				}
 			}
 			row += `</div>`;
+
+			if(event.data.UseXP) {
+				$('#currentlevel').html(event.data.level);
+				document.documentElement.style.setProperty('--percentage-width', event.data.percentage+"%");
+			} else {
+				$('.xpbar').hide();
+			}
 			
 			$('#craft-table').html(row);
 			$('.title-name').html(event.data.name);
@@ -106,7 +155,7 @@ window.addEventListener('message', function(event) {
 
 		if(canCraft) {
 			$('#craft-button-div').html(`
-				<button type="button" id="craft-button" data-item="${event.data.itemNameID}" data-recipe="${event.data.recipe}" data-amount="${event.data.itemAmount}" onclick="craft(this)" class="btn btn-blue flex-grow-1 mt-2" style="border-radius: 10px; flex-basis: 100%; width: 100%; font-weight: 600;"><i class="fas fa-pencil-ruler"></i> CRAFT [${event.data.itemName}]</button>
+				<button type="button" id="craft-button" data-item="${event.data.itemNameID}" data-recipe="${event.data.recipe}" data-amount="${event.data.itemAmount}" data-xp="${event.data.xp}" onclick="craft(this)" class="btn btn-blue flex-grow-1 mt-2" style="border-radius: 10px; flex-basis: 100%; width: 100%; font-weight: 600;"><i class="fas fa-pencil-ruler"></i> CRAFT [${event.data.itemName}]</button>
 			`);
 			$('#craft-button').fadeIn();
 		} else {
@@ -199,11 +248,19 @@ function craft(t) {
 	var itemId = t.dataset.item;
 	var recipe = t.dataset.recipe;
 	var amount = t.dataset.amount;
+	var xp = t.dataset.xp;
 
-	$.post('https://okokCrafting/action', JSON.stringify({
-		action: "craft-button",
-		itemID: itemId,
-		recipe: recipe,
-		amount: amount,
-	}));
+	if(canPressCraft) {
+		canPressCraft = false;
+		$.post('https://okokCrafting/action', JSON.stringify({
+			action: "craft-button",
+			itemID: itemId,
+			recipe: recipe,
+			amount: amount,
+			xp: xp,
+		}));
+		setTimeout(function(){
+			canPressCraft = true;
+		}, 400);
+	}
 }

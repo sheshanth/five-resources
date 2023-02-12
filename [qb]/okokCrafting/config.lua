@@ -10,6 +10,26 @@ Config.ShowBlips = false -- If true it'll show the crafting blips on the map
 
 Config.ShowFloorBlips = true -- If true it'll show the crafting markers on the floor
 
+Config.UseXP = true -- If you want to use the XP system or not
+
+Config.MaxLevel = 20 -- Max level on the workbenches
+
+Config.StartEXP = 100 -- First level XP
+
+Config.LevelMultiplier = 1.05 -- How much the XP needed increases per level (1.05 = 5% | level 1 = 100 | level 2 = 205 | etc...)
+
+Config.GiveXPOnCraftFailed = true -- If the player receives XP when he fails the craft of an item
+
+Config.itemNames = { -- format: id = label
+	goldbar = 'Example Gold Bar',
+	weapon_assaultrifle = 'Assault Rifle',
+	radio = 'Example Radio',
+	diamond_ring = 'Example Ring',
+	phone = 'Example Phone',
+	goldchain = 'Example Chain',
+	wine = 'Wine',
+}
+
 Config.Crafting = {
 	{
 		coordinates = vector3(-809.4, 190.3, 72.5), -- coordinates of the table
@@ -21,33 +41,64 @@ Config.Crafting = {
 		tableID = 'general1', -- make a different one for every table with NO spaces
 		crafts = { -- What items are available for crafting and the recipe
 			{
-				item = 'WEAPON_ASSAULTRIFLE', -- Item id and name of the image
+				item = 'weapon_assaultrifle', -- Item id and name of the image
 				amount = 1,
 				successCraftPercentage = 75, -- Percentage of successful craft 0 = 0% | 50 = 50% | 100 = 100%
 				isItem = false, -- if true = is item | if false = is weapon
 				time = 6, -- Time to craft (in seconds)
+				levelNeeded = 3, -- What level he needs to craft this item
+				xpPerCraft = 100, -- How much XP he receives after crafting this item
 				recipe = { -- Recipe to craft it
-					{'w2_WEAPON_ASSAULTRIFLE', 1, false}, -- item/amount/if the item should be removed when crafting
-					{'gunbarrel', 1, true},
-					{'weaponstock', 1, true},
-					{'trigger', 1, true},
-					{'grip', 1, true},
-					{'gunframe', 1, true},
-					{'metalspring', 2, true},
+					{'goldbar', 1, false}, -- item/amount/if the item should be removed when crafting
+					{'radio', 1, true},
+					{'diamond_ring', 1, true},
 				},
 				job = { -- What jobs can craft this item in this workbench
 					'police'
 				},
 			},
 			{
-				item = 'jewels', -- Item id and name of the image
-				amount = 3,
-				successCraftPercentage = 75, -- Percentage of successful craft 0 = 0% | 50 = 50% | 100 = 100%
+				item = 'radio', -- Item id and name of the image
+				amount = 1,
+				successCraftPercentage = 100, -- Percentage of successful craft 0 = 0% | 50 = 50% | 100 = 100%
 				isItem = true, -- if true = is item | if false = is weapon
 				time = 5, -- Time to craft (in seconds)
+				levelNeeded = 0,
+				xpPerCraft = 50,
 				recipe = { -- Recipe to craft it
-					{'gold', 12, true}, -- item/amount/if the item should be removed when crafting
-					{'diamond', 6, true},
+					{'goldbar', 1, true}, -- item/amount/if the item should be removed when crafting
+					{'phone', 1, true},
+				},
+				job = { -- What jobs can craft this item in this workbench
+					''
+				},
+			},
+			{
+				item = 'diamond_ring', -- Item id and name of the image
+				amount = 1,
+				successCraftPercentage = 100, -- Percentage of successful craft 0 = 0% | 50 = 50% | 100 = 100%
+				isItem = true, -- if true = is item | if false = is weapon
+				time = 4, -- Time to craft (in seconds)
+				levelNeeded = 1,
+				xpPerCraft = 65,
+				recipe = { -- Recipe to craft it
+					{'phone', 1, true}, -- item/amount/if the item should be removed when crafting
+				},
+				job = { -- What jobs can craft this item in this workbench
+					''
+				},
+			},
+			{
+				item = 'goldchain', -- Item id and name of the image
+				amount = 1,
+				successCraftPercentage = 100, -- Percentage of successful craft 0 = 0% | 50 = 50% | 100 = 100%
+				isItem = true, -- if true = is item | if false = is weapon
+				time = 3, -- Time to craft (in seconds)
+				levelNeeded = 2,
+				xpPerCraft = 80,
+				recipe = { -- Recipe to craft it
+					{'phone', 1, true}, -- item/amount/if the item should be removed when crafting
+					{'wine', 1, true},
 				},
 				job = { -- What jobs can craft this item in this workbench
 					''
