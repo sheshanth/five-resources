@@ -1,0 +1,61 @@
+-Thank's for downloading my car !-    //McLaren P1 SCPD by Game68240//
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+INSTRUCTIONS TO INSTALL----------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+IMPORTANT FOR DLC WORKS CORRECTLY AND GAME DON'T CRASH !!!
+
+FIRST, use this mod and install it in gta5 / mods / update / update.rpf / common / data
+       http://www.clictune.com/id=629025   (just wait the 10 sec and click on the link :) )
+
+OPTIONAL (but 10x better for all car), use this mod, follow the instruction on archive of the mod
+       http://www.clictune.com/id=626095   (same as before, wait the 10 sec and click :) )
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+FIRST go to: gta5 / mods / update / x64 / dlcpacks
+                                          Here activate "Edit Mode" and Right Click -> New -> Folder
+                                                                                             Name it "polp1"
+
+Open this folder and just add "dlc.rpf" from my archive.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+THEN go to gta5 / mods / update / update.rpf / common / data
+                                          Here take files "dlclist.xml" and "extratitleupdatedata.meta" and drag and drop on your PC
+
+Open a notepad, drag and drop "dlclist.xml" in the notepad, then, add a line above "</Paths>" and paste this:
+                <item>dlcpacks:\polp1\</item>
+
+Be sure new line is align to all other above. Close notepad, choose "Save" and replace file in OpenIV.
+
+Open a new notepad, drag and drop "extratitleupdatedata.meta" in the notepad, then, add line above "</Mounts>" and paste this:
+                <Item type="SExtraTitleUpdateMount">
+			<deviceName>dlc_polp1:/</deviceName>
+			<path>update:/dlc_patch/polp1/</path>
+		</Item>
+
+Be sure new line is align to all other above. Close notepad, choose "Save" and replace file in OpenIV.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+SPAWN THE CAR IN-GAME: Open a trainer, go to car spawning menu, select "spawn by name" and type "polp1"
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+MAKE CUSTOM LIVERY
+Open file "Template" in photoshop or other picture editor, draw all you want in skin, then hide the background (template) and save to
+.PNG with the SAME name: "Template"
+
+Then open "polp1.ytd" in gta5 / mods / update / x64 / dlcpacks / polp1 / dlc.rpf / x64 / vehicles.rpf
+
+Replace texture "Template" by yours.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+MY YOUTUBE CHANNEL BASED ON PERFECT REMAKE ON GTA V----------www.youtube.com/c/VinewoodProdOfficial------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------
+MY YOUTUBE CHANNEL OF TUTORIAL IN ANDROID AND PC-------------www.youtube.com/c/Game68240-----------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------
+MY MODDING TUTORIAL WEBSITE FOR GTA V------------------------http://game68240.fr/index.php/modding-gta-v/------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------
