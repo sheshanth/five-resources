@@ -113,17 +113,17 @@ Config.AuthorizedVehicles = {
 	-- Grade 2
 	[2] = {
 		["c8cop"] = "Corvette",
-        ["polp1"] = "mc laren",
+        ["polmp4"] = "mc laren",
 	},
 	-- Grade 3
 	[3] = {
 		["c8cop"] = "Corvette",
-        ["polp1"] = "mc laren",
+        ["polmp4"] = "mc laren",
 	},
 	-- Grade 4
 	[4] = {
 		["c8cop"] = "Corvette",
-        ["polp1"] = "mc laren",
+        ["polmp4"] = "mc laren",
 	}
 }
 
