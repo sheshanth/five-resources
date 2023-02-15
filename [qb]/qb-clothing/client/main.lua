@@ -1205,9 +1205,9 @@ local function getOutfits(gradeLevel, data)
     QBCore.Functions.TriggerCallback('qb-clothing:server:getOutfits', function(result)
         openMenu({
             {menu = "roomOutfits", label = "Presets", selected = true, outfits = data[gender][gradeLevel]},
-            {menu = "myOutfits", label = "My Outfits", selected = false, outfits = result},
-            {menu = "character", label = "Clothing", selected = false},
-            {menu = "accessoires", label = "Accessories", selected = false}
+            -- {menu = "myOutfits", label = "My Outfits", selected = false, outfits = result},
+            -- {menu = "character", label = "Clothing", selected = false},
+            -- {menu = "accessoires", label = "Accessories", selected = false}
         })
     end)
 end
