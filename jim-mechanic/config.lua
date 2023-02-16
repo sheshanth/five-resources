@@ -5,7 +5,7 @@ Config = {
 	Debug = false, -- Set to true to show green debug boxes to help track
 	img = "qb-inventory/html/images/", -- Set this to the directory for your inventory image files
 	JimShops = false, -- If using my free script jim-shops, enable this to use it with the mechanic stores.
-	JimMenu = true, -- If using my free edit of qb-menu enable this.
+	JimMenu = false, -- If using my free edit of qb-menu enable this.
 	distkph = false, -- Set to false to read distance travelled in Miles.
 
 -- Main variables
